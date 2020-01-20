@@ -85,15 +85,15 @@ footerColor.addEventListener('click', (event) => {
 })
 
 const bodyColor2 = document.querySelector('body');
-bodyColor2.addEventListener('click', (event) => {
-    event.target.style.backgroundColor = 'hotpink';
-    event.target.style.color= 'black';
+bodyColor2.addEventListener('click', () => {
+    bodyColor2.style.backgroundColor = 'hotpink';
+    bodyColor2.style.color= 'black';
     
 })
 
-const inversePColor = document.querySelector('.inverse-content p');
-inversePColor.addEventListener('click', (event) => {
-    event.target.style.backgroundColor= 'yellow';
-    event.target.style.color = "black";
+const inversePColor = document.querySelector('.inverse-content');
+inversePColor.addEventListener('click', () => {
+    inversePColor.style.backgroundColor= 'yellow';
+    inversePColor.style.color = "black";
     event.stopPropagation();
 })
